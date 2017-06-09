@@ -8,13 +8,13 @@ var basePath = __dirname;
 module.exports = {
   context: path.join(basePath, 'src'),
   resolve: {
-    extensions: ['.js', '.ts'],
-    alias: {
-      vue: 'vue/dist/vue.js'
-    }
+    extensions: ['.js', '.ts', '.tsx']
+    // alias: {
+    //   vue: 'vue/dist/vue.js'
+    // }
   },
   entry: {
-    app: './main.ts',
+    app: './main.tsx',
     vendor: [
       'vue'
     ],
@@ -29,7 +29,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.ts$/,
+        test: /\.tsx?$/,
         exclude: /node_modules/,
         use: {
           loader: 'awesome-typescript-loader',

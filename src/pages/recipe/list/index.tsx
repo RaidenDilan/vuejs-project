@@ -1,5 +1,5 @@
-import { RecipeListPage } from './page';
+import {RecipeListPageContainer} from './pageContainer';
 
 export {
-  RecipeListPage
+  RecipeListPageContainer
 }

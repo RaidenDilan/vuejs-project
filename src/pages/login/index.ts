@@ -1,4 +1,4 @@
-import {LoginPageContainer} from './pageContainer';
+import { LoginPageContainer } from './pageContainer';
 
 export {
   LoginPageContainer

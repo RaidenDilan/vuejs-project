@@ -1,4 +1,4 @@
-import Vue, {ComponentOptions} from 'vue';
+import Vue, { ComponentOptions } from 'vue';
 import { RecipeEntity } from '../../../model/recipe';
 import { recipeAPI } from '../../../api/recipe';
 import { RecipeListPage } from './page';
@@ -11,7 +11,7 @@ export const RecipeListPageContainer = Vue.extend({
   render: function(h) {
     return (
       <RecipeListPage
-        recipes={this.recipes}
+        recipes={ this.recipes }
       />
     );
   },

@@ -1,9 +1,9 @@
-import Vue, {ComponentOptions} from 'vue';
-import {RecipeEntity} from '../../../model/recipe';
-import {HeaderComponent} from './header';
-import {RowComponent} from './row';
-import {SearchBarComponent} from './searchBar';
-import {filterRecipeBusiness} from './business/filterRecipeBusiness';
+import Vue, { ComponentOptions } from 'vue';
+import { RecipeEntity } from '../../../model/recipe';
+import { HeaderComponent } from './header';
+import { RowComponent } from './row';
+import { SearchBarComponent } from './searchBar';
+import { filterRecipeBusiness } from './business/filterRecipeBusiness';
 
 interface State extends Vue {
   recipes: RecipeEntity[];
@@ -36,19 +36,19 @@ export const RecipeListPage = Vue.extend({
       <div class="container">
         <h2>Recipes</h2>
         <SearchBarComponent
-          searchInputHandler={this.searchInputHandler}
-          />
+          searchInputHandler={ this.searchInputHandler }
+        />
         <table class="table table-striped">
-          <HeaderComponent/>
+          <HeaderComponent />
           <tbody>
             {
               this.filteredRecipes.map((recipe) =>
                 <RowComponent
-                  key={recipe.id}
-                  recipe={recipe}
-                  />
-                )
-              }
+                  key={ recipe.id }
+                  recipe={ recipe }
+                />
+              )
+            }
           </tbody>
         </table>
       </div>

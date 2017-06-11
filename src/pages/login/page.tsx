@@ -11,16 +11,17 @@ export const LoginPage = Vue.extend({
   ],
   render: function(h) {
     return (
-      <div className="container">
-        <div className="row">
-          <div className="col-md-4 col-md-offset-4">
-            <div className="panel panel-default">
-              <HeaderComponent/>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4">
+            <div class="panel panel-default">
+              <HeaderComponent />
               <FormComponent
                 loginEntity={ this.loginEntity }
                 loginError={ this.loginError }
                 updateLogin={ this.updateLogin }
-                loginRequest={ this.loginRequest }/>
+                loginRequest={ this.loginRequest }
+              />
             </div>
           </div>
         </div>
